@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Careem-Bold';
+    src: url('fonts/Careem-Bold-2.otf');
+    src: url('fonts/Careem-Bold-2.otf') format('truetype')
+    font-weight: normal;
+    font-style: normal;
+}
+
+.web_loader {position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 9999;}
+.web_loader .web_percent {position: absolute;width: 578px;height: 114px;top: 0;left: 0;right: 0;bottom: 0;margin: auto;background-size: 100%;}
+.web_loader .web_percent .web_bar {position: absolute;top: 0;left: 0;width: 0%;height: 100%;background: url(../img/logo.png);}
+.web_loader .web_percent .web_overlay {position: absolute;width: 578px;height: 114px;top: 0;left: 0;right: 0;bottom: 0;margin: auto;background: url(../img/logo.png);background-size: 100%;opacity: .2;}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    width: 1920px;
+    height: 1080px;
+    margin: 0 auto;
+}
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    background: url(../img/bg.jpg) no-repeat;
+}
+.fullContainer { opacity: 0; }
+.fullContainer .logo {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    width: 578px;
+    left: 0;
+    margin: 0 auto;
+}
+#register_form {
+    position: absolute;
+    top: 450px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 830px;
+}
+#register_form .form_input {
+    margin: 15px 0;
+}
+#register_form .form_input span {
+    font-size: 70px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: 'Careem-Bold';
+    line-height: 80px;
+    width: 250px;
+}
+#register_form .form_input input {
+    font-size: 30px;
+    width: 560px;
+    height: 80px;
+    color: #48a240;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-family: 'Careem-Bold';
+    float: right;
+    border-radius: 5px;
+    position: relative;
+}
+#register_form input[type='submit'] {
+    width: 200px;
+    height: 70px;
+    outline: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 300px;
+    background: #48a240;
+    border: 5px solid #FFF;
+    border-radius: 5px;
+    color: #FFF;
+    text-transform: capitalize;
+    font-size: 50px;
+}
+#register_error {
+    position: absolute;
+    top: -50px;
+    font-size: 26px;
+    width: 700px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    color: #fefffe;
+    opacity: 0;
+    font-family: 'Careem-Bold';
+    text-transform: capitalize;
+}
+#register_error b { font-size: 34px; font-style: italic; }
